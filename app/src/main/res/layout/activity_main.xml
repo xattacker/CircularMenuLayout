@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <Button
+        android:id="@+id/button_mode1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="auto mode"
+        android:onClick="onModeClick"/>
+
+    <Button
+        android:id="@+id/button_mode2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_mode1"
+        android:text="manual mode"
+        android:onClick="onMode2Click"/>
+
+    <com.xattacker.android.view.circular.CircularMenuLayout
+        android:id="@+id/view_circle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/button_mode2">
+
+        <ImageView
+            android:id="@+id/earth_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/earth"
+            app:layout_constraintCircleAngle="45"
+            app:layout_constraintCircleRadius="120dp" />
+
+        <ImageView
+            android:id="@+id/earth2_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/star"
+            app:layout_constraintCircleAngle="205"
+            app:layout_constraintCircleRadius="120dp" />
+
+        <ImageView
+            android:id="@+id/earth3_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/star2"
+            app:layout_constraintCircleAngle="305"
+            app:layout_constraintCircleRadius="120dp" />
+
+        <ImageView
+            android:id="@+id/earth4_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mars"
+            app:layout_constraintCircleAngle="335"
+            app:layout_constraintCircleRadius="120dp" />
+
+        <ImageView
+            android:id="@+id/earth5_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/jupiter"
+            app:layout_constraintCircleAngle="335"
+            app:layout_constraintCircleRadius="120dp" />
+
+    </com.xattacker.android.view.circular.CircularMenuLayout>
+</RelativeLayout>
+
