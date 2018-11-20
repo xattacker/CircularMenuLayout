@@ -28,7 +28,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:layout_below="@id/button_mode2">
+        android:layout_below="@id/button_mode2"
+        app:mode="stable">
 
         <ImageView
             android:id="@+id/earth_image"

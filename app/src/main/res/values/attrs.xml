@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircularMenuLayout">
+        <attr name="mode">
+            <flag name="auto" value="1"/>
+            <flag name="manual" value="2"/>
+            <flag name="stable" value="3"/>
+        </attr>
+    </declare-styleable>
+</resources>
