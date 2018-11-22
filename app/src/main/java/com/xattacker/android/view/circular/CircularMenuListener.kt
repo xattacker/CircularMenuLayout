@@ -4,5 +4,5 @@ import android.view.View
 
 interface CircularMenuListener
 {
-    fun onCircularMenuClicked(aMenuView: View)
+    fun onCircularMenuClicked(menuView: View)
 }

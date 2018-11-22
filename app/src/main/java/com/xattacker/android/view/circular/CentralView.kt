@@ -6,11 +6,11 @@ import android.view.View
 
 class CentralView : View
 {
-    constructor(aContext: Context) : super(aContext)
+    constructor(context: Context) : super(context)
     {
     }
 
-    constructor(aContext: Context, aAttrSet: AttributeSet) : super(aContext, aAttrSet)
+    constructor(context: Context, attrSet: AttributeSet) : super(context, attrSet)
     {
     }
 
