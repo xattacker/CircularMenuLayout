@@ -1,7 +1,7 @@
 package com.xattacker.android.test
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.view.View
 import com.xattacker.android.circularmenulayout.R
 import com.xattacker.android.view.circular.CircularMenuLayout
