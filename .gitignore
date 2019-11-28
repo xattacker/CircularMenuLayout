@@ -23,7 +23,7 @@
 *.ptx.c
 *_g
 *.class
-DS_Store 
+.DS_Store 
 .settings 
 .gradle
 local.properties 

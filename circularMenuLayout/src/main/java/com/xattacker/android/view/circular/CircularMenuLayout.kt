@@ -11,7 +11,7 @@ import android.view.MotionEvent
 import android.view.View
 import android.view.ViewGroup
 import android.view.animation.LinearInterpolator
-import com.xattacker.android.circularmenulayout.R
+import com.xattacker.android.view.circular.R
 import com.xattacker.util.WeakReferenceList
 import java.lang.ref.WeakReference
 
