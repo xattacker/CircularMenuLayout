@@ -1,6 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.novoda.bintray-release' // for jCenter uploading
 
 android {
     compileSdkVersion 28
@@ -9,7 +10,7 @@ android {
         minSdkVersion 14
         targetSdkVersion 28
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles 'consumer-rules.pro'
@@ -23,10 +24,24 @@ android {
     }
 }
 
+// for jCenter uploading
+publish {
+    userOrg = 'xattacker'        //bintray.com用户名
+    groupId = 'com.xattacker.android'    //jcenter上的路径
+    artifactId = 'CircularMenuLayout'   //项目名称
+    publishVersion = '1.0.0'//版本号
+    desc = 'Android CircularMenuLayout UI component library'//描述，自由填写
+    website = 'https://github.com/xattacker/CircularMenuLayout' // 网址，自由填写
+}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.0.2'
     implementation 'androidx.core:core-ktx:1.0.2'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+}
+
+repositories {
+    mavenCentral()
 }
