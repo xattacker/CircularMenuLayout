@@ -19,6 +19,8 @@ allprojects {
     }
 }
 
+[ ![Download](https://api.bintray.com/packages/xattacker/maven/CircularMenuLayout/images/download.svg?version=1.0.1) ](https://bintray.com/xattacker/maven/CircularMenuLayout/1.0.1/link)
+
 dependencies {
     implementation 'com.xattacker.android:CircularMenuLayout:1.0.1'
 }
