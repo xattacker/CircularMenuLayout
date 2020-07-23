@@ -20,6 +20,6 @@ allprojects {
 }
 
 dependencies {
-    implementation 'com.xattacker.android:CircularMenuLayout:1.0.0'
+    implementation 'com.xattacker.android:CircularMenuLayout:1.0.1'
 }
 ``` 
