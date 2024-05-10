@@ -1,19 +1,25 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
-apply plugin: 'com.novoda.bintray-release' // for jCenter uploading
 
 android {
-    compileSdkVersion 28
+    compileSdk 33
+
+    namespace 'com.xattacker.android.view.circular'
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 28
-        versionCode 1
-        versionName "1.0.1"
+        targetSdkVersion 33
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = "17"
     }
 
     buildTypes {
@@ -22,16 +28,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-}
-
-// for jCenter uploading
-publish {
-    userOrg = 'xattacker'        //bintray.com用户名
-    groupId = 'com.xattacker.android'    //jcenter上的路径
-    artifactId = 'CircularMenuLayout'   //项目名称
-    publishVersion = '1.0.1'//版本号
-    desc = 'Android CircularMenuLayout UI component library'//描述，自由填写
-    website = 'https://github.com/xattacker/CircularMenuLayout' // 网址，自由填写
 }
 
 dependencies {
