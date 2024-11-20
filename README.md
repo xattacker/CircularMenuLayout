@@ -9,17 +9,18 @@ and provides mode MANUAL/AUTO :<br>
 
 ### Setup:
 
-minSdkVersion: 14 [ ![Download](https://api.bintray.com/packages/xattacker/maven/CircularMenuLayout/images/download.svg?version=1.0.1) ](https://bintray.com/xattacker/maven/CircularMenuLayout/1.0.1/link)
+minSdkVersion: 14 
 
 ``` 
 allprojects {
     repositories {
         ...
-        jcenter()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
     }
 }
 
 dependencies {
-    implementation 'com.xattacker.android:CircularMenuLayout:1.0.1'
+    implementation 'com.github.xattacker:CircularMenuLayout:1.0.1'
 }
 ``` 
